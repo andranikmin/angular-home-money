@@ -22,6 +22,7 @@ export class HistoryComponent implements OnInit, OnDestroy {
 
   chartData = [];
 
+
   ngOnInit() {
     this.sub1 = combineLatest(
       this.categoriesService.getCategories(),
