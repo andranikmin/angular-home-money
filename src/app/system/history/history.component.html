@@ -1,0 +1,14 @@
+<div class="title-block">
+  <h3 class="title">
+    Страница истории <span class="sparkline bar"></span>
+  </h3>
+</div>
+
+<div *ngIf="!isLoaded"></div>
+<div *ngIf="!isLoaded">
+  <am-history-chart [data]="chartData"></am-history-chart>
+  <am-history-events></am-history-events>
+  <am-history-filter></am-history-filter>
+</div>
+
+

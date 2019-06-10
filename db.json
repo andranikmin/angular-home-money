@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    }
+  ],
+  "bill": {
+    "value": 96000,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Еда333",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Машина",
+      "capacity": 7000
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 6000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "id": 6,
+      "type": "outcome",
+      "amount": 1250,
+      "category": 2,
+      "date": "10.06.2017 19:49:02",
+      "description": "fwef 2f2f"
+    },
+    {
+      "type": "outcome",
+      "amount": 3000,
+      "category": 3,
+      "date": "10.06.2019 16:07:42",
+      "description": "test",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 3,
+      "date": "10.06.2019 16:09:12",
+      "description": "444",
+      "id": 8
+    }
+  ]
+}
