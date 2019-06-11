@@ -31,6 +31,7 @@ export class HistoryComponent implements OnInit, OnDestroy {
       this.categories = data[0];
       this.events = data[1];
       this.calculateChartData();
+      this.isLoaded = true;
     });
   }
 

@@ -2,12 +2,20 @@
   <h3 class="title">
     Страница истории <span class="sparkline bar"></span>
   </h3>
+  <div class="pull-right">
+    <button class="btn-sm btn btn-primary-outline" (click)="onRefresh()">
+      <i class="fa fa-refresh"></i>
+    </button>
+  </div>
 </div>
 
 <div *ngIf="!isLoaded"></div>
-<div *ngIf="!isLoaded">
+<div *ngIf="isLoaded">
   <am-history-chart [data]="chartData"></am-history-chart>
-  <am-history-events></am-history-events>
+  <am-history-events
+    [categories]="categories"
+    [events]="events"
+  ></am-history-events>
   <am-history-filter></am-history-filter>
 </div>
 
