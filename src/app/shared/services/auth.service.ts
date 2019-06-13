@@ -3,6 +3,7 @@ export class AuthService {
 
   login() {
     this.isAuthenticate = true;
+    window.localStorage.setItem('isAuthenticate', 'true');
   }
 
   logout() {
@@ -11,6 +12,6 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean {
-    return this.isAuthenticate;
+    return  JSON.parse(window.localStorage.getItem('isAuthenticate')) ? true : false;
   }
 }
